@@ -1,0 +1,902 @@
+[
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Ievākt visus datus priekš abonementa atmaksas\nIevaddati: samaksas izvēle, kartes informācija\nDarbības: Datu uzglabāšana datubāzē\nIzvaddati: Tiek izvadīts, kāds abonements ir pieejams",
+    "output": "Funkcionālā prasība nav nodefinēta precīzi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Piekļuve lietotāja profilam\nIevaddati: e-pasts, parole\nDarbības: Salīdzina vai ievaddati un parole\nIzvaddati: Izvada vai ir dota piekļuve programmatūrai",
+    "output": "Nav līdz galam uzrakstīts teikums"
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Meklēt preci sortimentā\nIevaddati: Preces nosaukums\nDarbības: Salīdzina ar datubāzes datiem vai ievaddati sakrīt ar kādu preci\nIzvaddati: Meklēšanas rezultāts",
+    "output": "Prasība nepilnīgi atbilst aprakstam. Aprakstā bija minēts, ka priekšmetus ir iespējams meklēt ne tikai pēc nosaukuma, bet arī pēc citiem parametriem: kategorijas un tādiem parametriem kā izmēra, ietilpības vai materiāla; Jānorāda, kas tieši tiks izvadīts- kāda informācija par katru atrasto preci."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Izvēlēties preci\nIevaddati: Lietotāja klikšķis\nDarbības: Loga atvēršana\nIzvaddati: Nākamais logs",
+    "output": "Jānorāda, kas tieši būs atspoguļots šajā nākamajā logā."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Rezervēt preci\nIevaddati: Laika periods, preces saņemšanas dati\nDarbības: Datubāzē prece tiek atzīmēta kā rezervēta un darbiniekiem paradās kā nodot preci klientam\nIzvaddati: Preces saņemšanas informācija",
+    "output": "Jānorāda precīzi, kādus tieši laukus šie dati ietver; Jānorāda, ko tieši šī informācija ietver, kādus datu laukus."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Reģistrē darbinieku\nIevaddati: Lietotāja profils, lietotāja klikšķis\nDarbības: Lietotāja profilam tiek piešķirts darbinieka status\nIzvaddati: Tiek aizsūtīts e-pasts lietotājam, kuram tika piešķirts darbinieka statuss",
+    "output": "Šī prasība neatbilst aprakstam- tajā nav minēts, ka par darbinieku var kļūt tikai tāds cilvēks, kam jau ir lietu bibliotēkas lietotāja profils."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Pievieno/noņem preci no sortimenta\nIevaddati: Darbinieka profils, klikšķis\nDarbības: Padara preci redzamu/neredzamu klientiem\nIzvaddati: Teksts- prece veiksmīgi pievienota/noņemta",
+    "output": "Neprecīzi nodefinēti ievaddati: šim klikšķim ir jābūt noteiktā vietā uz ekrāna- vai nu tā ir kāda poga vai izvēles lodziņš (checkbox)."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: prasību noteikšana veiksmīgai vizītes pieteikšanai\nIevaddati: klienta lietotājvārds un parole\nDarbības: sistēma apstrādā klienta ievadītos datus un uzrāda klienta profilu\nIzvaddati: vizītes reģistrācijas dati, kas satur klienta vārdu,  uzvārdu, ID, tel. numuru u.c.",
+    "output": "Neprecīzi nodefinēti ievaddati: piesakot vizīti, klients norāda arī vēlamo vizītes laiku, speciālistu un iemeslu, kāpēc vizīte napieciešama; Pirms pieraksta izveides, sistēmai jāveic arī pārbaudi, vai klientam nav neapmaksātu rēķinu; Ir jānorāda precīzi visa informācija, kuru funkcijas izpildes rezultātā izvadīs sistēmas lietotājam."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Noteikt kā klients var pārcelt pieteikto vizīti\nIevaddati: klienta lietotājvārds un parole\nDarbības: klients atzīmējot konkrēto vizīti var to atcelt, un nepieciešamības gadījumā var pieteikt to uz citu laiku\nIzvaddati: vizītes atteikuma apstiprinājums",
+    "output": "ja nepieciešams vizīti pārcelt vai atcelt, tad kā ievaddati nepieciešams arī konkrētā pieraksta laiks."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Noteikt kā klients var iesniegt sūdzību\nIevaddati: klients ievada savu sūdzību\nDarbības: sistēma apstrādā un pieņem sūdzību un nosūta to vadītājam\nIzvaddati: sūdzības nosūtījuma apstiprinājums",
+    "output": "Ievaddati neatbilst medicīnascentra aprakstam. Ja klients vēlas iesniegt savu sūdzību, tam jānorāda arī savs vārds un uzvārds, jo apraklstā ir teikts, ka sūdzības nevar būt anonīmas."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: nodrošināt atšķirīgas piekļuves tiesības un lomas sistēmā dažādiem lietotājiem - pacientiem, medicīnas sekretāriem, medicīnas speciālistiem un pārvaldniekiemnodrošināt atšķirīgas piekļuves tiesības un lomas sistēmā dažādiem lietotājiem - pacientiem, medicīnas sekretāriem, medicīnas speciālistiem un pārvaldniekiem.\nIevaddati: ietver lietotāju informāciju un to, kādas darbības un datu piekļuves tiesības ir tiem piešķirtas.\nDarbības: ietver lietotāju konta izveidi, piešķirto lomu un tiesību noteikšanu, lietotāju datu pārvaldību, piem., jaunu lietotāju pievienošanu un esošo lietotāju datu atjaunošanu: personas dati un kontaktinformācija.\nIzvaddati: izvaddati ir piešķirtās lietotāja lomas un tiesības sistēmā. Izvaddatos ietilpst saraksts ar lietotājiem, to piešķirtajām lomām un tiesībām, kas var tikt izmantots sistēmas administrēšanai.",
+    "output": "Šai prasībai trūkst granularitātes- tā vienlaikus apraksta divas funkcijas: jaunu lietotāju pievienošanu sistēmā un esošo lietotāju datu atjaunošanu- tās būtu jānoformulē kā divas atsevišķas funkcijas."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: nodrošināt efektīvu un drošu pacientu datu un rēķinu pārvaldību: personas datu glabāšanu un rēķinu izsniegšanu pacientiem pēc veiktajiem pakalpojumiem\nIevaddati: ietver pacientu personas datus: vārdu, uzvārdu, kontaktinformāciju  un medicīniskā vēsture, informācija par sniegtajiem medicīniskajiem pakalpojumiem, cenām un atlaidēm.\nDarbības: pacientu datu uzņemšana un uzglabāšana. Rezultātā tiek izsniegts reķins pacientam, kas ietver maksājuma summu un informāciju par atlaidēm vai sadalītajiem maksājumiem.\nIzvaddati: izsniegto reķinu informācija. Ietver rēķina summu, aprēķinātās atlaides un informāciju par maksājumu grafiku, ja tika izmantotas sadalītās maksājuma opcijas.",
+    "output": "Jānorāda precīzi, kāda kontaktinformācija ir vajadzīga rēķina sastādīšanai. Vai tiešām arī medicīniskā vēsture ir nepieciešama rēķina sastādīšanai?"
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: nodrošināt veselības centra sistēmas darbības integritāti un nepārtrauktu pieejamību, veikt nepieciešamos uzturēšanas darbus, lai novērstu sistēmas traucējumus un nodrošinātu lietotāju piekļuvi.\nIevaddati: ietver informāciju par sistēmas darbību un atbalstu, par iepriekšējiem problēmu ziņojumiem un izmaiņām sistēmā.\nDarbības: regulāra sistēmas uzturēšana, programmatūras atjaunināšana un drošības pārbaudes, lai novērstu iespējamos drošības apdraudējumus.\nIzvaddati: labi uzturētas sistēmas stāvoklis. Periodiskie ziņojumi par veiktajiem uzturēšanas darbiem.",
+    "output": "Prasības, kas attiecas uz sistēmas pieejamību un uzturēšanu, apraksta nefunkcionālo prasību sadaļā."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Ievadīt pulciņa dalībnieka informāciju nepieciešamajā datu bāzē\nIevaddati: dalībnieka ID, dalībnieka vārds, dalībnieka uzvārds, dalībnieka e-pasts, dalībnieka tālruņa numurs\nDarbības: Datu bāzes aizpildīšana ar pulciņa dalībnieka informācijas datiem\nIzvaddati: Ievadīti dati par pulciņa dalībnieku datu bāzē.",
+    "output": "Aprakstā norādīts, ka reģistrējot jaunu biedru ir nepieciešams norādīt arī tā adresi; Datu saglabāšana datu bāzē nav izvaddati. Jānorāda, ko sistēma izvada, kā funkcijas rezultātu. Tas var būt arī paziņojums par veiskmīgu biedra pievienošanu."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Ļaut pircējiem virtuāli samaksāt par savu pirkumu\nIevaddati: Personas bankas kartes dati (kartes numurs, kartes derīguma termiņš, trīsciparu kods)\nDarbības: Sistēma pārbauda, vai klienta bankas kontā ir tik daudz naudas, cik maksā pirkums. Ja ir, sistēma atskaita naudu no klienta un nosūta to uz norādīto piegādātāju iemaksu kontu. Ja nav, sistēma uzrāda kļūdu, un rēķins netiek apmaksāts.\nIzvaddati: Rēķins ir samaksāts' vai 'Rēķins nav samaksāts', kā arī naudas pārskaite no klienta konta uz piegādātāju kontu.",
+    "output": "Naudas pārskaitījums nav funkcijas izvaddati."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Pievienot produktu TPP pieejamo produktu datubāzē\nIevaddati: Produkta apraksts (nosaukums, cena, attēls, produkta kategorija, raksturojums, derīguma termiņš, ražotājs, izcelsmes valsts, produkta kods)\nDarbības: TPP piegādātājs pievieno informāciju digitālā formā par iegādei pieejamu produktu, ko saņēma no piegādātāja. Sistēma formas datus saglabā datubāzē, kas satur visus iegādei pieejamos produktus.\nIzvaddati: Paziņojums uz lietotāja ekrāna “Pievienots.”, jauns produkta ieraksts produktu datubāzē.",
+    "output": "aprakstā ir minēti vēl daži citi parametri, kas jānorāda pievienojot jaunu produktu, bet daži no šeit minētajiem, piemēram, izcelsmes valsts aprakstā nav minēti kā nepieciešami."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Lietotāja apmaksa par velonomu\nIevaddati: lietotāja e-pasts, telefona nr., ID, adrese\nDarbības: pēc piemērotā velosipēda atlasīšanas, lietotājs ievada visu nepieciešamo informāciju, sistēma viņu novada uz maksāšanas veikšanu, kad apmaksa tiek veikta, lietotājam tiek nosūtīts e-pasts ar informāciju par rezervācijas datiem , kas jāuzrāda velo nomas darbiniekam.\nIzvaddati: Paziņo par veiksmīgu maksājumu un apstiprinājuma e-pasta nosūtīšanu.",
+    "output": "Aprakstā ir minēts, ka, lai iznomātu velosipēdu un/vai saistīto aprīkojumu ir nepieciešams norādīt arī nomas sākuma un beigu datumu; Jāprecizē, ko tieši satur šie rezervācijas dati. Tas būtu jānorāda pie funkcijas izvaddatiem."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Nodrošināt efektīvu velosipēdu nomas uzņēmuma datu pārvaldību\nIevaddati: Detalizēta informācija par velosipēdu nomas uzņēmuma datu bāzēm\nDarbības: Uzturēt un atjaunināt informāciju par nomas priekšmetiem, klientiem un nomas operācijām, ģenerēt pārskatus, iekļaut klientu datu apstrādes atļaujas\nIzvaddati: Efektīvi pārvaldīta datu bāze, kas ļauj uzņēmumam sekmīgi veikt nomas operācijas, uzturēt klientu attiecības",
+    "output": "Trūkst granularitātes. Šīs ir džādas darbības, kur katrai būtu jābūt definētai kā atsevišķai funkcijai."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: QR lasīšanas funkcija\nIevaddati: QR koda atkodēšana\nDarbības: QR koda nolasīšana un velosipēda rezervācīja.\nIzvaddati: Izvēlētā velosipēda specifikācīja,  vēsture un viņa pašreizējais statuss.",
+    "output": "Ievaddati ir informācijas vienība, bet šeit jūs esat aprakstījuši darbību; Jānorāda precīzi, kāda tieši informācija par velosipēdu tiks attēlota."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Klientu datu iegūšana\nIevaddati: Klienta vārds, uzvārds, telefona numurs, personas kods.\nDarbības: Datubāzē tiek saglabāta informācīja par klientu.\nIzvaddati: Ļauj lietotājam veikt velo nomu.",
+    "output": "Aprakstā ir norādīts, ka, lai reģistrētu jaunu klientu tiek pieprasīts norādīt arī viņa e-pasta adresi; Šī ir darbība nevis izvaddati."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Velosipēda noteikšana\nIevaddati: Klienta augums, svars un vēlamais velosipēda veids\nDarbības: Klientam tiek piedāvāti dažādi velosipēdu varianti balstoties uz klienta sniegto info.\nIzvaddati: Klienta veiktā izvēle par piedāvātajiem nomas produktiem.",
+    "output": "Vajadzētu norādīt, kāda tieši informācija par piedāvātajiem velospiēdiem tiks izvadīta klientam."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Bojājuma pieteikšana.\nIevaddati: Bojātā prece.\nDarbības: Klientam piedāvā izvēli pieteikt bojājumu, nosakot pēc viņa ID iznomāto produktu,  no piedāvātā saraksta atzīmējot bojājuma grupu.\nIzvaddati: Laika periods, kurā jāierodas veloservisā, lai nodotu bojāto produktu, izmaksas tiks novērtētas uz vietas.",
+    "output": "Sistēmā nevar ievadīt pašu bojāto preci, var tikai ievadīt datus par to- šeit jānorāda, kādi tieši dati tiek ievadīti; Šī ir darbība. Ja ir nepieciešams klientam izvadīt paziņojumu, ka izmaksas tiks novērtētas uz vietas, tad ir skaidri jānorāda, ka tas ir paziņojums ar šādu saturu."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Apstrādāt klientus un piešķirt lojalitātes akciju tiem, kam tā pienākas. Akciju piešķir tiem, kuri ir veikuši 5 pasūtījumus šī gada laikā.",
+    "output": "Nav norādīti funkciju ievaddati, izvaddati, būtībā doti tikai funkciju mērķi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Pasūtījumu veikšana.\nIevaddati: Ievāc datus par pasūtījuma komplektāciju, piegādes adresi, pasūtītāju un atmaksas informāciju\nIzvaddati: Izvada apstiprinājumu vai kļūdu.",
+    "output": "Nav norādīti funkciju ievaddati, izvaddati, būtībā doti tikai funkciju mērķi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Nodrošināt datu drošību.",
+    "output": "Šī ir nefunkcionālā prasība. Nepieciešams arī norādīt, ar kādiem līdzekļiem šī drošība tiks panākta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Sistēma pēc pieprasījuma izveido klienta profilu\nIevaddati: Klienta vārds, uzvārds, e-pasts, adrese, bankas konta numurs\nDarbības: Sistēma izveido lietotāja profilu, balstoties uz ievadīto informāciju\nIzvaddati: Sistēma izvada paziņojumu par veiksmīgu reģistrāciju un lūdz ieiet sistēmā ar pagaidu paroli un uzreiz to nomainīt",
+    "output": "Sistēmas aprakstā minēts, ka, lai reģistrētos klientam ir jānorāda arī telefona numurs."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Noteikt un informēt klientu un atbilstošo darbinieku par klienta parādu(-iem)\nIevaddati: Klienta identifikācijas numurs, atskaite par parādu\nDarbības: Sistēma aprēķina parāda summu un informē atbilstošos cilvēkus\nIzvaddati: Klientam e-pastā tiek nosūtīta ziņa par parādu un kvīts, atbilstošs darbinieks tiek informēts par parādu un vai tas ir nokārtots un apmaksāts.",
+    "output": "Šī prasība nav granulāra. Šie jau būs citas funkcionālās prasības izvaddati, jo brīdī, kas tiek aprēķināta soda nauda, rēķins vēl nevar būt apmaksāts."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Iegūt jaunas preces lietu bibliotēkai\nIevaddati: Preču bildes, apraksts un stāvoklis\nDarbības: Darbinieki ievada sistēmā preču bildes un aprakstu, kopā ar ko tiek papildināta preču daudzveidība\nIzvaddati: Lietas reģistrācija katalogā.",
+    "output": "Prasība ir neprecīzi definēta, jānorāda visi parametri, kurus nepieciešams ievadīt, lai lietu piereģistrētu katalogā; Jāprecizē, kas tieši tiek izvadīts- apstiprinājums, ka lietas reģistrācija bijusi veiskmīga?"
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Datu par pieejamo preču atjaunošana\nIevaddati: Preču bildes no dažādiem rakursiem un detalizēts apraksts.\nDarbības: Darbinieki ievada sistēmā preču bildes un aprakstu, un sistēma šo informāciju attēlo uzņēmuma mājaslapā\nIzvaddati: Gatavs preču katalogs",
+    "output": "Šī prasība nav precīzi definēta- jānorāda, kādi tieši parametri ir jāievada, lai katalogā reģistrētu jaunu lietu."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Ļaut lietotājam droši autentificēties programmā\nIevaddati: Lietotāja personas kods, izvēlēta parole\nDarbības: Sistēma saņem ievaddatus, kurus izmanto, lai datubāzē atrastu atbilstošo profilu. Ja profils neeksistē, datubāze tiek izveidots atbilstošs profils\nIzvaddati: Profils ar klienta konsultāciju info",
+    "output": "Aprakstā ir minēts, kādu informāciju ir nepieciešams norādīt, lai reģistrētu jaunu klienta kontu, ir nepieciešams vairāk nekā tikai lietotāja presonas kods un parole; Jānorāda precīzi, kāda tieši informācija šeit tiks izvadīta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Ļaut lietotājam pieteikt konsultāciju\nIevaddati: Konsultācijas datums, laiks, pakalpojums, klienta ID\nDarbības: Sistēma piedāvā konsultāciju pieejamos laikus. Konsultāciju piesakot, datubāzē tiek atzīmēts konsultācijas datums, laiks un pakalpojuma veids, kā arī klienta ID . Sistēma atzīmē, ka šis laiks tagad ir aizņemts\nIzvaddati: Pārskats par konsultāciju",
+    "output": "Klients veic pierakstu pie noteikta speciālista, tāpēc katram datu bāzes ierakstam par konsultāciju būtu jāsatur arī informācija par speciālistu, pie kura klients ir pieteicies uz konsultāciju; Jānorāda precīzi- kādu tieši informāciju par konsultāciju nepieciešams izvadīt."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Ļaut lietotājam atcelt konsultāciju\nIevaddati: Klienta ID, pakalpojuma info\nDarbības: Sistēma saņem attiecīgās konsultācijas informāciju, izņem no datubāzes konsultācijas pierakstu. Sistēma atzīmē, ka šis laiks ir pieejams konsultācijai\nIzvaddati: Brīvs konsultācijas laiks",
+    "output": "Jānorāda precīzi, kāda tieši informācija par pakalpojumu ir jānorāda, lai atceltu pierakstu; Vēl būtu nepieciešams veikt opārbaudi, vai konsultācija nav atcelta pārāk vēlu, jo aprakstā bija minēts, ka konsultācijas, kas netiek atceltas vismaz 24h pirms konsultācijas sākuma, pretējā gadījumā tiek piemērota 60% maksa par kavētu konsultāciju."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Ļauj lietotājam un personālam pārskatīt apmeklējumu vēsturi\nIevaddati: Klienta vai med. Personāla ID\nDarbības: Sistēma saņem klienta vai personāla ID, izņem no datubāzes visas notikušās konsultācijas, kurās bijis iesaistīts attiecīgais ID\nIzvaddati: Konsultācijas vēsture",
+    "output": "Jānorāda prezīzi, kādu tieši informāciju par katru konsultāciju šī vēsture satur."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Ļauj klientam veikt pieteikumu priekš zāļu receptes.\nIevaddati: Klienta ID, teksts ar zāļu raksturojumu, daudzumu.\nDarbības: Klients izveido pieteikumu, sniedzot vajadzīgo informāciju, sistēma apstrādā šo pieteikumu, izveidojot ierakstu datubāzē. Kad personāls to ir apskatījis, tad sistēmā var ievietot zāļu recepti, kurai tikai attiecīgais klients var piekļūt.\nIzvaddati: Zāļu recepte",
+    "output": "Jānorāda precīzi, kādu informāciju satur šī recepte. iespējams, tai ir kāds noteikts standarts, kuram tai jāatbilst, lai tā tiktu atzīta saskaņā ar valsts likumdošanu."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Sistēma jānodrošina lietotāju kontu izveide un pārvaldība , iespēja dažādiem lietotāju tipiem izveidot atbilstošu kontu ar atbilstošām piekļuves atļaujām.\nIevaddati: Lietotāju reģistrēšanai nepieciešamā informācija - vārds, uzvārds, tālruņa numurs, e-pasta adrese, adrese.\nDarbības: Datu ievade un uzglabāšana, konta izveide un konta pārvaldība, dzēšana.\nIzvaddati: Izveidotie, rediģētie vai dzēstie lietotāju konti.",
+    "output": "Prasība nav granulāra- šeit norādītās ir divas dažādas funkcijas, kuras ir jāapraksta katra savā funkcionālajā prasībā; Šeit jau ir vēl trešā funkcija- lietotāja konta dzēšana, arī tā jāapraksta atsevišķā funkcionālajā prasībā."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Jāuztur detalizēta produktu datu bāze, kurā piegādātāji var uzturēt precīzu un aktuālu produktu piedāvājumu un kurā biedri var viegli orientēties pasūtot preci.\nIevaddati: Produktu informācija - produkta nosaukums, apraksts, pieejamie daudzumi, cena, atbilstošā produkta kategorija\nDarbības: Produktu pievienošana, rediģēšana, atjaunošana, dzēšana un aktualizācija datu bāzē.\nIzvaddati: Atjaunināta un pilnveidota produktu datu bāze.",
+    "output": "Te ir vismaz 4 dažādas funkcijas, kuras katra jāaprakata savā funkcionālajā prasībā; vai pēc katras atjaunošanas lietotājam tiek izvadīta visa produktu datu bāze? ja nē, tad jānorāda konkrēti, kas tad tiek izvadīts šīs funkcijas izpildes rezultātā."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Uzturēt racionālu produktu pasūtīšanas vidi priekš biedriem\nIevaddati: Lietotāju profila dati, izvēlētie produkti, pasūtījuma daudzumi\nDarbības: Produktu izvēles un pasūtījumu veikšanas iespēja, produktu aizturēšana sistēmā pasūtīšanas procesā, produktu rezervēšana pēc pasūtīšanas, kopējo pasūtījumu aprēķini\nIzvaddati: Pasūtījums ar produktu detalizējumu",
+    "output": "Jānorāda precīzi, kāda informācija par katru pasūtīto produktu tiek izvadīta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Lietotāja veiktā pasūtījuma informācijas saglabāšana datu bāzē\nIevaddati: Pasūtījuma numurs, informācija par klientu , kontaktinformācija, pasūtījuma summa, pasūtījuma dati(pasūtījuma veikšanas datums, pasūtījuma apraksts), pasūtījuma saņemšanas datumu, piegādes veidu, pasūtījuma statusu (saņemts, izgatavots, izsniegts piegādei vai piegādāts).\nDarbības: Sistēma apstrādā klienta ievades laukos ievadīto informāciju un pasūtījuma datus, nosūta tos uz datu bāzes serveri, kur tie tiek saglabāti datu bāzes tabulā\nIzvaddati: Lietotājs saņem apstiprinājuma ziņojumu, ka pasūtījums ir veikts",
+    "output": "Jānorāda precīzi- kāda tieši informācija par klientu ir nepieciešama."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Saglabāt klienta reģistrēto profilu datubāzē\nIevaddati: Klienta e-pasts, vārds un uzvārds, parole, adrese, telefona numurs, kredīt kartes informācija\nDarbības: Sistēma saņem klienta ievadītos datus, saglabā tos datubāze, lai klients var ieiet un izmantot savu profilu\nIzvaddati: Poga Login un paziņojums ka klients veiksmīgi ir iegājis savā mājaslapas/aplikācijas profilā vai ari nav iegājis (ja nav ievadīti pareizie dati)",
+    "output": "Jānorāda precīzi, ko tieši šī informācija ietver"
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Ievākt datus priekš profila izveides\nIevaddati: Vārds, uzvārds, telefonā numurs, e-pasts, parole\nDarbības: Datu uzglabāšana datubāzē, profila izveide\nIzvaddati: Izvada, ka profils ir izveidots",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Atgriezt preci\nIevaddati: Atgriešanas veids, laiks/kurjers (pats nodot/caur pastu), komentārs\nDarbības: Ievaddati tiek uzglabāti datubāzē, tehniskās pārbaudes speciālistam darāmo lietu sarakstam tiek pievienota preces apskatīšana\nIzvaddati: Ievadītais datums, kurā nodos vai kā piegādāt preci kurjeram",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Aprēķināt kopējo samaksas summu pircējam\nIevaddati: Product_id, product_amount, price, member_id, order_id\nDarbības: Sistēma aprēķina kopējo samaksas summu: atrod izvēlētos product_id un to attiecīgo cenu (price) un sareizina cenu ar izvēlēto produkta daudzumu. Katra produkta summu saskaita un izvada gala resultātu.\nIzvaddati: Payment_sum.",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Automātiski, uz labu laimi reizi 2 nedēļās ievēlēt jaunus TPP dežurantus no pieejamo biedru klāsta.\nIevaddati: TPP biedru saraksts, ko iegūst no TPP dalībnieku datubāzes, esošo TPP dežurantu saraksts, ko iegūst no TPP dalībnieku datubāzes, nepieciešamo dežurantu skaits.\nDarbības: Sistēma piekļūst TPP dalībnieku datubāzei, iegūstot biedru sarakstu, kas nav esoši dežuranti. Uz labu laimi reizi 2 nedēļās, balstoties uz nepieciešamo dežurantu skaita, sistēma izlozē jaunus dežurantus. Iepriekšējās nedēļas dežurantu statuss tiek nomainīts atpakaļ uz biedra statusu (“0” vērtība TPP dalībnieku datubāzes dežuranta statusa ailē). Jaunizlozēto dežurantu statuss tiek nomainīts uz “1” attiecīgajā ailē. Sistēma datubāzē atzīmē datumu, kurā automātiskā izloze tika veikta. Katru dienu plkst. 00.00 sistēma veic pārbaudi, vai kopš pēdējās izlozes veikšanas ir pāgājušas 2 nedēļas.\nIzvaddati: Statusa mainīgā izmaiņas TPP dalībnieku datubāzē atkarībā no dežuranta statusa iegūšanas vai zaudēšanas. TPP lietotāju sistēmā paziņojums par dežurantu izlozes veikšanu un jaunievēlētajiem dežurantiem.",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Reģistrēt klientus.\nIevaddati: Ievaddatos norādīt, telefona nr., e-pastu, paroli, deklerēto dzīvesvietas adresi, vārds, uzvārds, dzimumu.\nDarbības: Šī funkcija reģistrē klientu datubāzē\nIzvaddati: Izvada apstiprinājumu vai kļūdu.",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Mainīt saskarnes valodu. Starp valodām: latviešu un angļu.",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Aprēķināt, vai konkrēta prece ir pieejamā dotajā brīdī\nIevaddati: Datums, kad prece tiek paņemtā nomā\nDarbības: Sistēma aprēķina, vai no preces arendēšanas datuma ir pagājusi nedēļa. Pēc nedēļas preci ir jāatgriež, taču gadījumā, ja tā paša prece nav jau arendēta ar citu cilvēku - Arendēšanas laiku var pagarināt līdz mēnesim un tad pēc mēneša preci ir obligāti jāatgriež.\nIzvaddati: 1. Informācija par to, var ir pienācis laiks atgriezt preci; 2. Informācija par to, vai ir iespēja pagarināt arendēšanas laiku",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Piešķirt atlaidi klienta mēneša maksai pēc lietas nodošanas\nIevaddati: Lietas vērtība, ko noteicis tehniskais speciālists\nDarbības: Tiek samazināta klienta mēneša maksa atkarībā no nodotās lietas vērtības\nIzvaddati: Sistēmā tiek samazināta mēneša maksa un par to tiek informēts klients",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Ļaut lietotājam apmaksāt pakalpojumu\nIevaddati: Klienta ID, pakalpojuma veids, cena\nDarbības: Sistēma piedāvā apmaksāt līdz konkrētam datumam konsultāciju. Uzsākot apmaksas procesu, aplikācija novirza lietotāju uz ārēju saiti, kas ļauj lietotājam droši autentificēties ar savu bankas informāciju un veikt maksājumu uz medicīnas centra bankas kontu.\nIzvaddati: Rēķins par apmaksāto pakalpojumu",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Dežuranta lomas rotācijas sistēma, kur amatu ir iespējams deleģēt gan fiziskai personai, gan sistēmai pašai\nIevaddati: Biedru saraksts, viņu pieejamība, iespējamais brīvprātīgais\nDarbības: Dežuranta izvēla, autorizācijas piešķiršana, rotācijas cikla informācijas atjaunošana. Ja amata piešķiršanai izvēlēto personu rediģē fiziska persona (finanšu direktors), tad sistēmai ir jāatjauno cikls ar doto informāciju. Izsūtīt ziņu attiecīgajam biedram\nIzvaddati: Attiecīgai nedēļai izvēlētais dežurants, biedram nosūtītā ziņa",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Ar paziņojumiem uzlabot lietotāju savstarpējo mijiedarbību un pieredzi ar produktu.\nIevaddati: Paziņojumi, lietotāju preferences\nDarbības: Paziņojumu sūtīšana uz izvēlēto saziņas līdzekli (e-pasts, SMS, in-app ziņas)\nIzvaddati: Veiksmīgi nosūtīti paziņojumi",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Nodrošināt lietotājus ar resursiem, lai viņi spētu veiksmīgi un efektīvi naviģēt, pielietot programmu\nIevaddati: Lietotāja darbība ar apmācības materiāliem, biežāk uzdotajiem jautājumiem\nDarbības: Rādīt apmācības materiālus, biežāk uzdotos jaut., sekot līdzi lietotāju apskatītajiem materiāliem\nIzvaddati: Informācija sistēmā par lietotāju darbību ar materiāliem",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Atļaut lietotājiem pielāgot dažus vizuālos sistēmas aspektus\nIevaddati: Lietotāju preferences zīmola elementiem (logotipi, krāsu shēmas)\nDarbības: Pielāgošanas opciju uzrādīšana, lietotāju preferenču saglabāšana\nIzvaddati: Pielāgots sistēmas vizuālais izskats",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Kopumā uzdevums ir izpildīts labi, nodefinētas 7 funkcionālās un 3 nefunkcionālās prasības,\nIevaddati: Noliktavā pieejamie ziedi, to skaits un veids\nDarbības: Veic aprēķinus par ziedu pieejamību noliktavā\nIzvaddati: Atjauno aprēķināto informāciju mājaslapā un aplikācijā par pieejamajiem ziediem un apsveikumiem",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Sagatavot atskaiti par veikala darbību\nIevaddati: Laika periods; Izvēle – izveidot atskaiti no noteikta florista pasūtījumiem, vai no visu klientu pasūtījumiem; Ja ir noteikts florists, tad to jāievada\nDarbības: Sistēma apstrādā pieprasījumu, ievades dati tiek validēti, no datu bāzes atlasa filtrētus datus par noteikto laika periodu un par noteikto floristu (ja tāds tika norādīts)\nIzvaddati: Izpildīto pasūtījumu skaits",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Lietotāja izvēlētās valodas tulkojums\nIevaddati: Izvēlētā valoda (latviešu vai angļu)\nDarbības: Programma tiek tulkota uz izvēlēto valodu\nIzvaddati: Programmas interfeisa valoda ir pārtulkota izvēlētajā valodā (tiek vizuāli parādīta)",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: piešķirt klientam zelta statusu (10% atlaidi)\nIevaddati: klienta ID\nDarbības: sistēma pēc klienta ID pārbauda klienta pasūtījuma vēsturi gada laikā, ja klientam bija 5 pasūtījumi gada laikā, tad sistēma piešķir 10% atlaidi turpmākiem pasūtījumiem\nIzvaddati: ja klients atbilst nosacījumiem, tad tiek piešķirta atlaide",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Virtuālais asistents, kurš atbild uz klientu jautājumiem\nIevaddati: Lietotāja jautājums\nDarbības: Sistēma saņem jautājumu un ģenerā atbilstošu atbildi\nIzvaddati: Virtuālā asistenta atbilde tiek parādīta klientam",
+    "output": "Prasība formulēta korekti un atbilstoši. Nav nepieciešami labojumi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Iespēja klientiem reģistrēties un izveidot personīgus lietotāja kontus, izmantojot e-pastu un telefona numuru, kur varētu glabāt savus personas datus un saņemt informāciju par izsniegtajām lietām.",
+    "output": "Definējot funkcionālās prasības, ir jānorāda katras funkcijas mēŗķi, ievaddatus, darbības un izvaddatus. Šajā funkciju sarakstā ir uzskaitīti tikai funkciju mērķi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Sistēmas katalogs, kurā klienti var pārlūkot pieejamās lietas, apskatīt attēlus un detalizētus aprakstus.",
+    "output": "Definējot funkcionālās prasības, ir jānorāda katras funkcijas mēŗķi, ievaddatus, darbības un izvaddatus. Šajā funkciju sarakstā ir uzskaitīti tikai funkciju mērķi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Rezervācijas iespēja, kas ļauj klientiem nospraust, kad viņi vēlas saņemt un atdot izsniegtās lietas.",
+    "output": "Definējot funkcionālās prasības, ir jānorāda katras funkcijas mēŗķi, ievaddatus, darbības un izvaddatus. Šajā funkciju sarakstā ir uzskaitīti tikai funkciju mērķi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Izsniegšanas un atdošanas procesu pārvaldīšana, ieskaitot lietu skenēšanu, stāvokļa novērtēšanu un izsniegšanas apstiprināšanu.",
+    "output": "Definējot funkcionālās prasības, ir jānorāda katras funkcijas mēŗķi, ievaddatus, darbības un izvaddatus. Šajā funkciju sarakstā ir uzskaitīti tikai funkciju mērķi.Šī prasība nav granulāra- tajā vienlaikus ir runāts par vairākām funkcijām- lietu izsniegšanu un atdošanu."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Automātiska rēķinu ģenerēšana klientiem par izsniegtajām lietām un soda naudu, ja nepieciešams.",
+    "output": "Definējot funkcionālās prasības, ir jānorāda katras funkcijas mēŗķi, ievaddatus, darbības un izvaddatus. Šajā funkciju sarakstā ir uzskaitīti tikai funkciju mērķi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Sistēma nodrošina klientiem iespēju saņemt paziņojumus un atgādinājumus par svarīgiem notikumiem, piemēram, tuvojošos atdošanas datumu, jauna pievienota prece konkrētajā kategorijā vai rēķina saņemšanu. Šie paziņojumi var tikt nosūtīti e-pastā vai īsziņas veidā, lai klienti vienmēr būtu informēti par savu konta stāvokli un bibliotēkas piedāvājumiem.",
+    "output": "Definējot funkcionālās prasības, ir jānorāda katras funkcijas mēŗķi, ievaddatus, darbības un izvaddatus. Šajā funkciju sarakstā ir uzskaitīti tikai funkciju mērķi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Pacientam jāvar pieteikt konsultāciju pie izvēlētā speciālista.\nIevaddati: Pacienta vārds, uzvārds, personas kods, kontaktinformācija, izvēlētās konsultācijas datums un laiks, veselības apraksts.\nDarbības: Pacients ievada informāciju un izvēlas speciālistu un datumu no pieejamajiem.\nIzvaddati: Sistēma apstiprina konsultācijas pieteikumu un nosūta apstiprinājumu pacientam.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Medicīnas centra administrācija var plānot un piešķirt konsultācijas.\nIevaddati: Pacienta pieteikumi, speciālistu grafiki un pieejamie laiki.\nDarbības: Administrācija izvēlas pieejamos laikus un piešķir konsultācijas pacientiem.\nIzvaddati: Sistēma atjaunina konsultāciju plānu un informē pacientus par piešķirtajiem laikiem.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Uzglabāt un atjaunināt pacientu datus un konsultāciju informāciju.\nIevaddati: Visi iepriekšējās konsultācijas dati, pacientu informācija.\nDarbības: Sistēma saglabā datus un ļauj atjaunināt tos pēc vajadzības.",
+    "output": "Jāprecizē, kādi dati un informācija tieši ir vajadzīgi šīs funkcijas realizēšanai."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Sistēma jāizveido, lai automātiski nosūtītu pacientiem un speciālistiem e-pasta paziņojumus attiecībā uz konsultācijām, atgādinājumiem par iegādātajām pakalpojumu maksām un citiem svarīgiem notikumiem.\nIevaddati: Konsultācijas dati , e-pasta adrese .\nDarbības: Sistēma jāizstrādā tā , lai automatizēti sūtītu paziņojumus par konsultācijām un saistītiem notikumiem.\nIzvaddati: E-pasta paziņojumi, kas saņemti pacientu un speciālistu e-pastā.",
+    "output": "Jāprecizē, ko tieši šie dati satur. Jāprecizē, kam ir šī e-pasta adrese- ārstam vai pacientam vai vēl kādam citam. Pie darbības jāapraksta, kas ir jādara sistēmai nevis sistēmas veidotājiem."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Pacientiem jāvar atstāt atsauksmes un novērtējumus pēc konsultācijas, lai uzlabotu medicīnas centra pakalpojumu kvalitāti.\nIevaddati: Teksta atsauksmes un novērtējumi.\nDarbības: Pacientam jāvar ievadīt teksta atsauksmi un novērtējumu, izmantojot sistēmu.\nIzvaddati: Atsauksmes un novērtējumi, kas redzami medicīnas centra speciālistiem  un var tikt izmantoti uzņēmuma uzlabošanai.",
+    "output": "Aprakstā ir teikts, ka atsauksmes nevar būt anonīmas.Aprakstā ir teikts, ka atsauksmes pamatā saņem medicīnas centra vadītājs, un, ka citiem medicīnas centra darbiniekiem netiek izpausta atsaukmes iesniedzēja identitātē, tāpēc šeit vajadzētu precizēt kas un kādā formā šo atsauksmi saņem."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Lietotājiem jāvar droši pieteikties sistēmai, un jābūt nepieciešamajiem drošības pasākumiem, lai aizsargātu datus un personas informāciju.\nIevaddati: Lietotājvārds, parole, divkārša autentifikācija.\nDarbības: Sistēmai jānodrošina droša lietotāju pieteikšanās un jāizmanto divkārša autentifikācija, ja nepieciešams.\nIzvaddati: Lietotāju pieeja sistēmai un droša datu pārsūtīšana.",
+    "output": "Neviennozīmīgs formulējums. Ja ir situācijas, kad divkārša autentifikācija ir nepieciešama un arī tādas, kad tā nav nepieciešama, tad šeit būtu precīzi jānorāda, kurās situācijās vajag un kad- nevajag. Šie nav konkrētās funkcijas izvaddati."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Sameklēt produktu un informāciju par to.\nIevaddati: Produkta vārds un filtri.\nDarbības: Funkcija mēģina atrast datubāzē atbilstošo produktu.\nIzvaddati: Lietotājam izvada produktu un informāciju par to , ja tas tika atrasts datubāzē",
+    "output": "Jānorāda precīzi, pēc kādiem filtriem sistēmā būs iespējams filtrēt produktus. Precizēt, kādu tieši informāciju par katru produktu izvada."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: pievienot jaunus biedrus pulciņam, lai tie varētu pieklūt sistēmai un idetificēt sevi.\nIevaddati: konta personas dati (vārds, uzvārds, parole, e-pasts, adrese un talrunis).\nDarbības: tiek izveidots jauns konts, kuru biedrs var lietot lai piedalītos pulciņā.\nIzvaddati: Apstiprinājums par konata izveidi",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Nodrošināt iespēju darbiniekiem, biedriem un koordinatoriem izmainīt ziņojumus, lai apmainītos ar informāciju par produktiem, pasūtījumiem, un citiem saistītiem jautājumiem.\nIevaddati: Ziņojumi, saņemēja un nosūtītāja dati, ziņojuma datums un laiks. Darbība: Nosūtīt un saņemt ziņojumus, izveidojot dokumentētu komunikācijas vēsturi sistēmā.\nIzvaddati: Nosūtītie un saņemtie ziņojumi  sistēmā.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: ļaut biedriem izveidot pasūtījumus no pieejamā produktu saraksta.\nIevaddati: Izvēlētie produkti, to daudzums.\nDarbības: Lietotājs izvēlas produktus no saraksta un norāda vēlamo daudzumu.\nIzvaddati: Pirkuma saraksts ar izvēlētajiem produktiem un to daudzumu.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: efektīvi pārvaldīt un uzglabāt informāciju par piegādātāju piegādātajiem produktiem. Nodrošina precīzus, atjauninātus produktu datus.\nIevaddati: produkta nosaukums, kategorija, mērvienības, cena, produkta attēls, derīguma termiņš, tā apraksts, maksimālais daudzums produktam, kas pieejams konkrētajā nedēļā. Darbība: produkta pievienošana , attēlu augšupielāde, derīguma terimiņa pārvalde, vaicājums un meklēšana, pasūtīšanas procesa integrācija.",
+    "output": "Nav norādīti šīs funkcijas izvaddati."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Lai būtu iespējams sekot produktu sarakstam un individuāliem produktiem, piegādātājam jābūt iespējai pievienot produktu.\nIevaddati: Produkta informācija (nosaukums, mērvienība, kategorija, cena par vienību, iepakota produkta svars un tilpums, attēls, termiņš, apraksts), produkta daudzums (ja 0, produkts nav pieejams).\nDarbības: Tiek izveidots jauns ieraksts produktu datubāzē.\nIzvaddati: Pievienotā produkta informācija un pieejamība.",
+    "output": "Šī prasība pēc satura pārklājas ar iepriekšējo prasību."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: ļauj biedriem un kooperatīvam pārvaldīt un atbalstīt dažādus maksājumu veidus, lai nodrošinātu ērtus un efektīvus norēķinus par pasūtījumiem un dalību kooperatīvā.\nIevaddati: maksājumu veida informācija (bankas konta numuri, cvv/cvc, kartes termiņš).\nDarbības: maksājumu veidu saglabāšana un rediģēšana.\nIzvaddati: maksājumu veidu saraksts, kas ir pieejams biedriem pasūtījumu norēķinu laikā.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: sūtīt paziņojumu biedriem pasūtījuma kavēšanās gadījumā.\nIevaddati: pasūtījuma numurs, biedru kontaktinformācija, kurus ietekmē pasūtījums.\nDarbības: atrast biedrus pēc informācijas un atrast pasūtījuma informāciju, nosūtīt biedriem paziņojumu uz e-pastu un telefonu par pasūtījuma kavēšanu.\nIzvaddati: paziņojums ar pasūtījuma numuru un produkta informāciju .",
+    "output": "Jāprecizē, kādu produkta informāciju ietvers šis ziņojums."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: saņemt informāciju par to vai klients nav palaidis garām  preces atgriešanas laiku.\nIevaddati: klienta vārds un uzvārds .\nDarbības: Sistēma iegūst informāciju: datu bāzē atrodot klientu pēc vārda uzvārda, nosaka cik ilgi prece ir pie klienta un aprēķina vai klients nav nokavējis preces atgriešanas laiku.\nIzvaddati: Paziņojums, kas parāda klienta vārdu un uzvārdu un laiku cik ir atlicis lai nodotu preci vai arī cik laiks ir pārsniegts.",
+    "output": "Ar klienta vārdu un uzvārdu varētu nepietikt, lai pareizi noteiktu viņam izdoto preču atgriešanas laiku- cilvēkiem var būt vienādi vārdu un uzvārdi. Labāk būtu lietot klienta ID vai personas kodu."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Pievienot jauni preci kataloga lai viņus var īre.\nIevaddati: Jaunas preču apraksts  un viņu cena.\nDarbības: Pārbaudīt ir šo prece kataloga vai ne. Ja viņa nav tad pievienot viņu datu bāzei, bet ja viņa ir tad paradīt viņu datu bāzē.\nIzvaddati: Jaunu prece katalogā.",
+    "output": "Nepieciešams norādīt, kādus tieši parametrus jāievada par katalogam pievienojamo lietu."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Saņemt informāciju par to, vai klients ir salauzis sadzīves tehniku. Ja ir, tad aprēķināt bojājumu smagumu un iekasēt naudu par preces salabošanu.\nIevaddati: Klienta vārds uzvārds, attēls, apraksts.\nDarbības: Sistēma saņem klienta nosūtīto attēlu, kā arī aprakstu par preces bojājumiem. Darbinieks novērtē bojājumu smagumu un ievada datu bāzē.\nIzvaddati: Klients saņem paziņojumu ( izmaksas par preces remontēšanu, ja prece nav remontējama tiek piestādīts rēķins par tehnikas cenu).",
+    "output": "Bojājumi tiek novērtēti apskatot lietu dzīvē nevis tikai pēc attēla un apraksta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Atrast un iegādāties attiecīgās preces priekš nomāšanas, lai kompānija būtu gatava jebkāda veida pasūtījumiem.\nIevaddati: Attiecīgās preces nosaukums un cena ievietota sistēmā.\nDarbības: Atrast un iegadāties attiecīgās preces vai pasūtīt pēc klienta pieprasījuma.\nIzvaddati: Mājas lapā/Aplikācijā parādās noteiktas lietas/preces pieejamība.",
+    "output": "Preču meklēšana, lai tās varētu iegādāties un papildināt lietu bibliotēkā pieejamo preču klāstu, nenotiek pašā Lietu bibliotēkas sistēmā, bet ārpus tās, tāpēc šī funkcionālā prasība neattiecas uz lietu bibliotēkas sistēmu. Ja runa ir par jaunas lietas pievienošanu katalogam, tad šīs funkcijas mēŗķi ir nepieciešams pārdefinēt. Pievienojot preces sistēmai, ir nepieciešams norādīt ne tikai to nosaukumu un cenu, bet arī citus parametrus."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Saņemt informāciju vai klients ir samaksājis apdrošināšanu par preci.\nIevaddati: Klienta vārds un uzvārds .\nDarbības: Sistēma aprēķina cik lielā apmērā ir jāmaksā apdrošināšana(ja klientam ir vēlme to darīt): datu bāzē sameklē cik dienas tiks īrēta prece un kāda ir cena par to uz vienu dienu, pēc tam 10% no vienas dienas cenas sareizina ar dienām uz, cik tiks īrēta prece.\nIzvaddati: Paziņojums vai klients ir samaksājis apdrošināšanu, ja jā tad , tiek izvadīta summa.",
+    "output": "Ar klienta vārdu un uzvārdu varētu nepietikt- cilvēkiem var būt vienādi vārdi un uzvārdi. Labāk būtu lietot klienta ID vai personas kodu."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Izņemt no kataloga preces kuras ir bojātas.\nIevaddati: Preces nosaukums un apraksts kāpēc to nevar izīrēt .\nDarbības: Sistēma saņem preces nosaukumu un aprakstu, cilvēks ievieto skaidrojumu kāpēc preci nevar izīrēt.\nIzvaddati: Preces nosaukums un tās nepieejamība parādās Mājaslapā/Aplikācijā.",
+    "output": "Kāpēc ir nepieciešams šis apraksts? Vai nepietiek, ka nelietojamo preci no kataloga vienkārši dzēš?"
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Ļaut lietotājam laicīgi rezervēt lietu uz vēlāku laiku, lai droši varētu to iegūt nepieciešamajā laikā, vai arī iegūt to uzreiz, kā kāds cits lietotājs to ir atgriezis katalogā.\nIevaddati: Preces nosaukums un cena , lietotāja vārds, uzvārds, e-pasts, tel. Nr ., rezervācijas laika posms.\nDarbības: Lietotājs izvēlas un rezervē preci uz sev vēlamu laiku, ja tajā laikā jau nav veikta rezervācija šai lietai.\nIzvaddati: Sistēmā parādās, ka konkrētajā laikā prece ir rezervēta.",
+    "output": "Lai nepārprotami identificētu lietas, labāk izmantot to identifikācijas numurus. Cenu nav nepieciešams ievadīt, jo to sistēma var nolasīt pati no datu bāzes. Šo informāciju ir iespējams iegūt no klientu datu bāzes, jo tā tur jau glabājas, pietiktu ievadīt lietotāja personas kodu vai klienta numuru."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Valodas izvēle galvenā mājas lapā. Tas nepieciešams, jo Latvijā ir cilvēku, kas neprot runāt latviešu valodu, un daudz apmeklētāju, kuri runā tikai angliski. Tāpēc ir nepieciešams, lai vietnes lietotāji augšējā panelī varētu izvēlēties valodu, kurā viņu vietne tiks tulkota.",
+    "output": "Jūs esat formulējuši 7 funkcionālās prasības, bet tās nav paprakstītas prasītajā formātā- norādot katras funkcijas mēŗķi, ievaddatus, veicamās darbības un izvaddatus. Būtībā ir formulēti tikai katras funkcijas mērķi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Sistēma dot iespēju izveidot 'online' pietēikumu pie ārsta, izvēlējoties ārtstu, dienu, laiku un vienu no mediciniskiem centriem lai netērētu laiku, lai ierastos uz vietu un reģistrētos manuāli.",
+    "output": "Jūs esat formulējuši 7 funkcionālās prasības, bet tās nav paprakstītas prasītajā formātā- norādot katras funkcijas mēŗķi, ievaddatus, veicamās darbības un izvaddatus. Būtībā ir formulēti tikai katras funkcijas mērķi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Medicīnas pakalpojuma apmaksas funkcija - Ērtai bezkontakta apmaksai par medicīnas pakalpojumu interneta vidē. Nospiežot uz atbilstošā lauka, notiek pāreja uz vidi, izvēloties banku apmaksai, kur tiek veikta samaksa. Pēc apmaksas notiek atgriešanās no vides uz apmaksas lapu, kur tiek parādīts pakalpojuma numurs un tā apstiprinājums",
+    "output": "Jūs esat formulējuši 7 funkcionālās prasības, bet tās nav paprakstītas prasītajā formātā- norādot katras funkcijas mēŗķi, ievaddatus, veicamās darbības un izvaddatus. Būtībā ir formulēti tikai katras funkcijas mērķi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Lietotājs varēs apskatīt informāciju par ārstiem, piemēram, darba pieredzi, izglītību, kādās valodās viņi runā utt.",
+    "output": "Jūs esat formulējuši 7 funkcionālās prasības, bet tās nav paprakstītas prasītajā formātā- norādot katras funkcijas mēŗķi, ievaddatus, veicamās darbības un izvaddatus. Būtībā ir formulēti tikai katras funkcijas mērķi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Lietotājam ir iespēja atstāt atsauksmes tieši vietnē. Sūdzības, iespaidi utt. Pēc patīk/nepatīk sistēmas tiks vērtēts ārstu darbs, lai medicīnas centra vadītājam būtu skaidrs, kurš no ārstiem savu darbu veic apzinīgi.",
+    "output": "Jūs esat formulējuši 7 funkcionālās prasības, bet tās nav paprakstītas prasītajā formātā- norādot katras funkcijas mēŗķi, ievaddatus, veicamās darbības un izvaddatus. Būtībā ir formulēti tikai katras funkcijas mērķi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Lai ienāktu, tiek izmantota ieejas sistēma ar banku (Smart ID). Mērķis ir labāka datu aizsardzība. Lai ienāktu, ir jāievada lietotāja numurs un personīgais kods (Smart ID), un pēc tam jūs pāriet uz savu profilu.",
+    "output": "Jūs esat formulējuši 7 funkcionālās prasības, bet tās nav paprakstītas prasītajā formātā- norādot katras funkcijas mēŗķi, ievaddatus, veicamās darbības un izvaddatus. Būtībā ir formulēti tikai katras funkcijas mērķi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Funkcija ārsta un speciālista pēc viņa vārda un uzvārda. Meklēšana notiks, izmantojot īpašo ievades lauks. Sistēmai jāmeklē speciālists ne tikai pēc precīza ievadījuma, bet arī neņemot vērā speciālās zīmes (apostrofus, mīkstinājumus, garumzīmi)",
+    "output": "Jūs esat formulējuši 7 funkcionālās prasības, bet tās nav paprakstītas prasītajā formātā- norādot katras funkcijas mēŗķi, ievaddatus, veicamās darbības un izvaddatus. Būtībā ir formulēti tikai katras funkcijas mērķi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Sistēmai jāveido automātiski rēķini izsūtot tos uz e-pastu.\nIevaddati: Aprēķina katra pulciņa dalībnieka pasūtījuma summu.\nDarbības: Programmatūra automātiski aprēķina katra pulciņa dalībnieka kopējo rēķinu summu.\nIzvaddati: aprēķina kopējo rēķinu summu.",
+    "output": "Šī ir darbība, kas tiek veikta ar ievaddatiem, bet te jānorāda, kādi dati tiek izmantoti, lai šo aprēķinu veiktu.Šī daļa ir noformulēta kā darbība, bet izvaddatiem jābūt informācijas vienībai, kas tiek radīta funkcijas darbības rezultātā."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: datu bāzē uzglabā pulciņa dalībnieku informācija: vārds un uzvārds, e-pasts un tālruņa numurs saziņai.\nIevaddati: personas dati par pulciņa dalībniekiem.\nDarbības: saglabā kontaktinformāciju par pulciņa dalībniekiem.\nIzvaddati: datu bāzē tiek uzglabāti personas dati par dalībniekiem.",
+    "output": "Aprakstā ir minēts, ka reģistrējot jaunu dalībnieku ir nepieciešams norādīt arī viņa/viņas adresi. Šeit jānorāda precīzi ievaddati. Jūs tos iesat iekļāvuši kā daļu no funkcijas mērķa definējuma."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: iesniegta pasūtījuma sastăva mainīšana.\nIevaddati: - .\nDarbības: klients spēj pievienot vai noņemt produktus no jau iesniegta pasūtījuma, ja pasūtījums vēl nav sākts gatavots.\nIzvaddati: paziņojums, ka pasūtījums ir veiksmīgi modificēts.",
+    "output": "Ir jānorāda funkcijai nepieciešamie ievaddati."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Nodrošināt, ka lietotājam ir pieejama informācija par noteiktu produktu pieejamību/nepieejamību.\nIevaddati: ID, laika periods-no pirmdienas rīta līdz otrdienas 12.00. Darbības : Pasūtījuma noformējuma brīdī, izvēloties produktu, kas nav pieejams, izvadīt lietotājiem paziņojumu, ka dotais produkts pašlaik nav pieejams, un paralēli izvadīt paziņojumu ar datumiem, kuros produkts būs atkal pieejams iegādei.\nIzvaddati: Paziņojums ar produkta nr., aprakstu un pieejamību(cik vēl atlicis noliktavā), atbilstoši arī datumi, kuros produkts būs pieejams, ja pašlaik tā nav.",
+    "output": "Šis droši vien ir produkta ID, bet no dotā apraksta tas nav skaidri saprotams- nepieciešams precizēt.Šis droši vien ir ievaddatu piemērs nevis ievaddati, kādi tie ir nepieciešami katrā šīs funkcijas izpildes reizē."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Nodrošināt sistēmas lietotājam personīgo datu aizsardzību no nozagšanas un noplūdes.\nIevaddati: ID, laika periods - No pirmdienas rīta līdz otrdienas 12.00. Darbības : Sistēma ievāc no lietotāja nepieciešamos datus, pieprasa autentifikācijas vārdu un  paroli, lai pārliecinātos par klienta identitāti, saglabā tos datubāzē un pēc pasūtījuma termiņa beigām dati no datubāzes tiek neatgriezeniski dzēsti, nodrošinot, ka lietotājam tas tiek paziņots. Nodrošināt, ka pieeja klienta datiem ir tikai dežurantiem, kuri pasūtījuma brīdī atrodas dežūrā.\nIzvaddati: Paziņojums, kurā norādīts klienta vārds, uzvārds un pasūtījuma nr., paralēli izvadot paziņojumu, ka dati tiek aizsargāti un tiks dzēsti pēc noteiktā termiņa.",
+    "output": "Nav skaidrs, kāpēc šij funkcijai ir nepieciešami šādi ievaddati. Kāds ID šeit tiek ievadīts? klienta?Nepieciešams precizēt, kas tieši ir tie dati, kas no datu bāzes tiek dzēsti- pasūtījuma dati, klienta dati vai vēl kas cits?"
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: datu ievade par pieejamo preci pārdošanai.\nIevaddati: Dežuranta ID .\nDarbības: Sistēma saglabā ievadītos datus par pieejamo preci.\nIzvaddati: Lietotājam ir redzams preces nosaukums, daudzums, derīguma termiņš, cena, fotoattēls, iepakojuma svars, sastāvs, tilpums vai vienību skaits vienā iepakojumā.",
+    "output": "Šīs funkcijas izpildei droši vien būtu nepieciešami arī pašas preces dati- šeit jānorāda konkrēti."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Labāki piedāvājumu lojāliem klientiem.\nIevaddati: Klienta unikālais identifikators.\nDarbības: Sistēma piešķir klientiem atlaidi, atkarīgi no tā cik bieži viņi pasūta, ja mēnesī ir sasniegta noteikta summa tad viņiem tiek piešķirts prestižš statuss, ar kuru tiek piešķirta atlaide 15% apmērā.\nIzvaddati: Paziņojumu, kas ietver Klienta unikālo identifikatoru, darījuma kopsummu un piešķirto atlaidi.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Parādīt kādi jauni produkti ir parādījušies.\nIevaddati: ID.\nDarbības: Sistēma piedāvā jaunos produktus kuri ir tikko parādījušies, jaunos produktus pirmās 2 nedēļas nocenot vismaz par 20% lētāk kā no oriģinālās cenas, un jaunie produkti vienmēr izcelsies no pārējiem produktiem, tie vienmēr atjaunojas, ja parādas jauns produkts datu bāzē.\nIzvaddati: ID, kurš produkts, laika posms.",
+    "output": "Kas šis ir par ID? produkta, tiešās pirkšanas pulciņa dalībnieka vai vēl kāds cits? Tas pats pie izvaddatiem. Jānorāda precīzi, kāda informācija par produktu tiks izvadīta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Interaktīva mape , kur var atrast īrējamo velo.\nIevaddati: Atvērt lietotnē sadaļu - Karte(Map).\nDarbības: Ņem informāciju par atrašanās vietu no lietotāja ierīces, kartē jau ir atzīmētas kompānijas servisa un HQ lokācijas.\nIzvaddati: Rāda karti, rāda lietotāja pašreizējo atrašanās vietu, rāda kompānijas velo servisa un HQ atrašanās vietas.",
+    "output": "Angļu valodas vārdu “map” latviski tulko kā “karte”."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Noformēt velosipēda nomu attālināti ar lietotnes starpniecību (1.daļa).\nIevaddati: Klienta augums, svars, velosipēda vēlamais tips, nomas laiks.\nDarbības: salīdzināt klienta ievaddatus ar velo ieteicamo fiziskajiem aspektiem un inventāra pieejamību(pēc inventāra sistēmas, datu bāzes). Atrast pēc ievaddatiem pielāgotos velo un to īres cenas.\nIzvaddati: Piedāvāt vairākus pielāgotos irējamos velo pie katra velo ir pierakstīta cena un poga “nomāt”(priekš 2.daļas, kur klients (īrnieks) veic pirkumu, noslēdz īres līgumu.)",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Nomas laika sadaļa, kur var pārbaudīt nomas atlikušo laiku vai to pagarināt, ja velosipēds nav rezervēts.\nIevaddati: Atvērt lietotnē sadaļu “Noma”.\nDarbības: Skaita un norāda nomas atlikušo laiku, pārbauda un norāda vai saistīto velosipēdu nav kāds cits rezervējis, lai lietotājs redz, vai nomas laiku var pagarināt. Pagarināšanas gadījumā norāda jaunu nomas laiku. Skaita un norāda lietotāja iekavēto laiku un attiecīgo soda summu.\nIzvaddati: Nomas laiks, velosipēda rezervācijas statuss, iespēja pagarināt nomas laiku spiežot pogu “Pagarināt”,  soda summa, ja gadījumā nomas laiks ir beidzies (nomas atlikušais laiks sāk norādīt iekavēto laiku).",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Sistēmai jānodrošina tehniskā apkope un pārbaudes.\nIevaddati: Atgrieztais velosipēds pēc nomas perioda beigām.\nDarbības: Pārbauda tehnisko stāvokli, veic apkopi un atjauno pieejamību.\nIzvaddati: Apstiprinājums par veikto apkopi un velosipēda atkal pieejamība nomai.",
+    "output": "Pašu velosipēdu nevar ievadīt datorsistēmā, tāpēc ievaddati būs kaut kāda informācija par atgriezto velosipēdu, šeit jāprecizē, kāda tieši. Jānorāda tās darbības, kuras veic ar datorsitēmas līdzdalību, tehniskā stāvokļa pārbaude ir manuāla darbība, kuru veic tehniskās apkopes speciālists."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Izveidot atskaiti izvēlētā periodā par katru iznomāto velosipēdu: klientu, tā velosipēdu un tā papildaprīkojumu.\nIevaddati: Datums.\nDarbības: Sistēma pārbauda katru ierakstu ar sakrītošu datuma periodu un sagrupē pēc datuma.\nIzvaddati: Numurs pēc kārtas, Vārds, Uzvārds, Telefona numurs, Velosipēda numurs, Velosipēda tips, Papildaprīkojums.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Sagatavot rēķinu priekš klienta pēc nomas beigām.\nIevaddati: Automātiski sagatavota atskaite par nesamaksātu nomas periodu vai forma, kuru aizpilda klientu apkalpošanas speciālists vai tehnsikās apkopes speciālists. Dati iekļauj klienta numuru, vārdu, uzvārdu vai juridiskas personas nosaukumu un numuru, telefona numuru un/vai e-pasta adresi, informācijas par patērētajiem pakalpojumiem un laiku.\nDarbības: Apkopo datus no automatiski sagatavotās atskaites vai aizpildītās formas un sagatavo PDF rēķinu ar klienta datiem, patērētajiem pakalpjumiem, informāciju par iznomātāju, samaksas veidu un kopēju summu. Rēķinu iespējams nosūtit uz e-pastu vai izdrukāt.\nIzvaddati:  Rēķins PDF formātā un vēstule uz klienta e-pastu, ja nepieciešams.",
+    "output": "Jānorāda, balstoties uz kādu informāciju sistēma nolems, vai tas ir vai nav nepieciešams."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis : Pasūtījuma izveide.\nIevaddati: Klients izvēlās pasūtījuma saņemšanas veidu un ievada adresi.\nDarbības: Saglabā pasūtījumu datu bāzē.\nIzvaddati: Uz e-pastu tiek nosūtīts pasūtījuma numurs, ar iespēju izsekot sūtījumu.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis : Klientu identifikācija.\nIevaddati: Lietotājvārds, parole, e-pasts, adrese, maksājuma veids.\nDarbības: Saglabāšana datu bāzē.\nIzvaddati: Konta izveide.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis : Finanšu pārskata ģenerācija.\nIevaddati: Klientu vārds, uzvārds, pasūtījumi, prece, preces cena, pasūtījuma summa, piegādes maksa, izdevumi, peļņa.\nDarbības: Apkopo ievaddatus Excel tabulas formātā.\nIzvaddati: Lejupielādējams Excel fails, kas satur veikala finanšu pārskatu.",
+    "output": "Aprakstā ir minēts, ka sistēma nevis vienkārši padara pieejamus  pārdošanas datus tabulas veidā, bet, ka vadītājam ir iespējams ģenerēt finanšu pārskatus dažādos griezumos."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis : Informācijas apkopošana par floristu izpildītajiem pasūtījumiem.\nIevaddati: Florista izpildītie pasūtījumi .\nDarbības: Tiek saglabāti datu bāze, lai vēlāk varētu strādāt ar šiem datiem.\nIzvaddati: Informācijas krātuve ar floristu pasūtījumiem.",
+    "output": "Būtu nepieciešams precizēt, kāda tieši informācija tiek glabāta par katru izpildīto pasūtījumu."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis : Rēķina automātiska sagatavošana.\nIevaddati: Klienta vārds, uzvārds, pasūtījuma ID, prece/s, daudzums, pasūtījuma summa.\nDarbības: Pēc veiksmīgas pasūtījuma apmaksas apkopo ievaddatus, izveidojot rēķinu, un nosūta to lietotājam uz e-pastu.\nIzvaddati: Uz e-pastu nosūtīts, sagatavotais pasūtījuma rēķins",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis : Ziedu izvēlne lietotājam .\nIevaddati: Buķetes lielums, izmantotie ziedi un to krāsa, apsveikuma teksts.\nDarbības: Izvēles apstrāde un saglabāšanā, lai varētu pāriet pie pasūtījuma izveides.\nIzvaddati: Izvada cenu.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis : Tiešsaistes konsultācija.\nIevaddati: Klienta vārds, uzvārds, e-pasts, ziņa/jautājums.\nDarbības: Sistēmā ir pieejams tiešsaistes čats, kas ir pieejams veikala darba laikā. Lietotājs caur to var aizsūtīt savu jautājumu, kuru saņem veikala darbinieks.\nIzvaddati: Veikala darbinieka atbilde uz lietotāja uzdoto jautājumu.",
+    "output": "Sistēma šos izvaddatus nevar ģenerēt bez cilvēla- ziedu salona darbinieka palīdzības, tāpēc šīs funkcijas izvaddati nebūs atbilde, bet gan attiecīgajam darbiniekam nosūtītais jautājums."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Reģistrē klientu.\nIevaddati: Vārds, uzvārds, personas kods, telefona numurs, e-pasts, adrese, pasta-indekss.\nDarbības: Saglabāt ievadītos datus datubāzē.\nIzvaddati: Paziņojums, kas apstiprina reģistrāciju, kā arī tiek izsūtīts e-pasts, lai pabeigtu reģistrācijas procesu.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis:Attēlot datubāzi ar pieejamajiem produktiem.\nIevaddati:Kategorijas nosaukums un/vai produktu nosaukums, filtrs(atrasto preču kategorizēšanai) .\nDarbības: Apkopo esošās preces atbilstoši lietotāja ievadītajiem filtriem.\nIzvaddati: Attēlo atrastās preces tabulas formātā pēc izvēlētā filtra.",
+    "output": "Šeit nepieciešams konkrēti norādīt, pēc kādiem parametriem meklēšanas rezultātus ir iespējams filtrēt."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis:Sodīt klientu par preču neatgriešanu, bojāšanu, pazaudēšanu.\nIevaddati: Preces cena, bojājumu labošanas izmaksas, klienta dati .\nDarbības: Klientam aprēķina sodu, 3 reizes preces cenu. Nobloķē klientu no tālākas preču īrēšanas.\nIzvaddati: Paziņo klientam par soda apjomu, kā arī par liegumu noīrēt citas preces līdz soda apmaksai.",
+    "output": "Jānorāda precīzi, kādi tieši dati par klientu ir nepieciešami"
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Pievienot jaunas preces datu bāzē.\nIevaddati: Klienta vārds uzvārds  ,preču bilde,  kategorija,  nosaukums ,preču kvalitāte/stavoklis ,pieejamība ,cena.\nDarbības: Sistēma pievienoja preci kopēja datubazē  noteiktajā kategorija.\nIzvaddati: Prece parādās kopēja kataloga/intefeisa un uzrakstīt ka prece veiksmīgi pievienota.",
+    "output": "Klienta vārds un uzvārds netiks glabāts lietu datu bāzē.  Informācija par klientu būtu svarīga, lai aprēķinātu atlaidi abonēšanas maksai, bet to būtu jāraksta kā atsevišķu funkcionālo prasību."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Piešķirt klientam preci.\nIevaddati: Izvēlētā prece, nomas periods, personas dati.\nDarbības: Atzīmē preci, kā rezervētu (aizņemtu), datubāzē atzīmē klientu, kam tā piešķirta, izsūta e-pastu par preces iznomāšanas apstiprinājumu.\nIzvaddati: Nomas cena, datums līdz kuram tā jāatgriež, saņemšanas vieta.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "jāprecizē, kādus tieši datus nepieciešams norādīt- reģistrētiem klientiem noteikti pietiktu ar klienta numuru vai personas kodu, jo visu pārējo informāciju var atrast datu bāzē.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis:ļaut lietotājiem veikt maksājumu par rezervētas precēm.\nIevaddati: rezervēto preču saraksts ,maksājuma informācija .\nDarbības: Apstrādāt maksājumu un atjauno lietotāja kontu ar jauniem rezervācijas piekļaujas datumiem.\nIzvaddati: zina par veiksmīgo apmaksu .",
+    "output": "Jānorāda precīzi, kāda tieši informācija šeit ir nepieciešama.Izvaddatus jāapraksta no sistēmas viedokļa, piemēram, “paziņojums par veiksmīgu abonementa apmaksu”."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Funkcijas mērķis - Sistematizēt ārstu darba grafiku . Ievaddatus – ievaddati ir dati kuri tiks ievaditi datubāzē par ārsta darba laiku .  Darbības - balstoties uz ārsta identifikācijas nr nolasa ārsta darba grafiku. Izvaddati - kalendārā tiek veikta atzīme par dienu un laiku kurā attiecīgais ārsts strādā .",
+    "output": "Precizēt- kas tieši tiek ievadīts. Izvaddatos ir darbība- datu bāzē tiek pievienots jauns ieraksts. Jānorāda izvaddati."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Funkcijas mērķis - funckijas mērķis ir ļaut pacientiem reģistrēties lietotnē lai izveidotu savu lieotāja profilu. Ievaddati - lietotāja vārds un uzvārds, id numurs, epasta adrese , telefona nr, parole. Darbības - izmantojot ievadītos datus izveido lietotāja profilu datubāzē. Izvaddati - izveidots lieotāja profils.",
+    "output": "Jānorāda precīzi, kas tieši tiek izvadīts. Vai paziņojums, ka lietotāja profils veiksmīgi izveidots?"
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Funkcijas mērķis - Darbinieki var atrast linku saitē  un uzlikt kalendarā laiku, kad var sazvanities un aprunāt plānu uz dienu vai problēmas. Ievaddati – laiks, zvanas tēma, nickname, publiska vai privāta saruna. Darbības - Izmantojot kalendāru un pašu saiti var ērti un ātri uztaisīt online sarunu. Izvaddati – Izveidot online sarunu .",
+    "output": "Nav saprotams, kur šī saite tiek atrasta. Izvaddatos ir darbība nevis izvaddati."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Funkcijas mērķis - Ļaut pacientiem iesniegt sūdzības attiecībā uz veselības centra darbību. Ievaddati - sūdzības inforācija , pacienta dati . Darbības - reģistrē sūdzību un nosūta to izskatīšanai. Izvaddati - Apstiprinājums par iesniegto sūdzību.",
+    "output": "Jāprecizē, kādi tieši pacienta dati šeit ir nepieciešami"
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Funkcijas mērķis - Atļauj klientiem meklēt un apskatīt pieejamās procedūras, konsultācijas un cenas tām. Ievaddati - Speciālista vārds un uzvārds, vai specialitātes nosaukums. Darbības - Sarakstā atrast visas procedūras un speciālistus pēc ievadītā nosaukuma, vai vārda un uzvārda. Tad klientam uzrādīt sarakstu kurā ir tikai atrastie rezultāti. Izvaddati - Saraksts, ar procedūru nosaukumiem, speciālistiem un cenām.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Funkcijas mērķis - Būs pieejams saraksts, kur katrs darbinieks var apskatīties kādi medikamenti ir noliktava, cik palika, un kāds termiņš palika. Ievaddati – medikamenta nosaukums, daudzums.  Darbības - Pārbauda cik noliktava palika medikamentu un kāds termiņš ir šiem medikamentiem, var pasūtīt no noliktavas, var pirkt jauno partiju un noliktavu. Izvaddati – informācija par medikamentiem un tas skaits.",
+    "output": "Nav skaidrs, kādēļ ir nepieciešams ievadīt daudzumu, ja funkcijas mēŗķis ir noskaidrot medikamenta daudzumu."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Funkcijas mērķis - Ļaut pacientam atcelt tikšanos, neuzskaitot soda summu. Ievaddati – pacienta datus  un atcelšanas iemesls. Darbības - pārbauda atcelšanas laiku, atceļ rezervēto laiku . Izvaddati - Apstiprinājums par atceltajām tikšanām.",
+    "output": "Jāprecizē, kādi tieši pacienta dati ir nepieciešami, lai varētu atcelt konsultāciju.Vēl ir nepieciešams izveidot rēķinu, ja konsultācija tiek atcelta vēlāk kā 24 h pirms tās sākuma."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Funkcijas mērķis ir lietotājam sniegt opciju ziņot par sistēmas kļūdām.\nIevaddati: Lieotājs var sniegt kļūdas aprakstu vai, kļūdas kodu vai apzīmējumu.\nDarbības: Lietotāja ievadītā informācija tiek saglabāta specifiskā datu bāzē, kur operātors spēj to apskatīt.\nIzvaddati: Ja lietotājs ievada un saglabā informāciju, tad tam tiek izvadīta ziņa-“Ziņojums saglabāts.",
+    "output": "Šāda funkcionalitāte sistēmas aprakstā nav minēta kā nepieciešama."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis - izveidot lietotājam profilu un piešķirt pagaidu paroli. Ievaddati – Lietotāja vārds, uzvārds, telefona numurs, e-pasts, adrese. Darbības - e-pasta adrese tiek pārveidota par lietotājvārdu un tiek piešķirta pagaidu parole līdz lietotāja pirmajai pieslēgšanās reizei. Izvaddatus - Izveidots profils un piešķirta pagaidu parole.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis – Lietotājam ir jābūt iespējai redzēt pieejamos produktus un izvēlēties produktus kurus vēlās nopirkt. Ievaddati – datubāze ar pieejamiem produktiem.  Darbības – sistēma datubāzē atrod produktus, to cenu, pieejamību un citus datus atkarībā no projekta. Izvaddati – informācija par produktiem (derīguma termiņš, daudzums iepakojumā, apraksts, pārdevējs, cena par vienību, attēls).",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis - nodrošināt iespēju jebkuram lietotājam ātri izveidot pasūtījumu par viņu interesējošo produktu. Ievaddati - lietotājs ievada datus par vēlamo preci, var pievienot fotogrāfijas, aprakstus un, ja iespējams, saites uz avotiem, kur šīs preces var iegādāties . Darbības - sistēma saglabā informāciju par katru preci datubāzē, sadalot to pa atsevišķiem pasūtījumiem atkarībā no pasūtījuma autora un vēlamās preces kategorijas.  Izvaddati - sistēma saglabā lietotāja ievadītos produkta datus un padara tos redzamus citiem lietotājiem.",
+    "output": "Saskaņā ar aprakstu, pulciņa dalībniekie var iegādāties preces, kuras piegādātāji ir norādījuši kā pieejamas, nav iespējas izvēlēties tādu preci, kuras katalogā nav. Nav skaidrs, kā notiek šī sadalīšana- jāapraksta precīzāk."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis – Piegādātājiem vajadzētu būt iespējai atjaunināt informāciju par esošu produktu vai pievienot jaunu produktu. Ievaddati – Ražotājs dodas uz savu profilu, kur tiek glabāta informācija par visiem viņa produktiem un, izmantojot vizuālo saskarni, viņš atjaunina informāciju vai pievieno jaunus produktus.  Darbības- Atjaunināšanas gadījumā - sistēma atrod vajadzīgo preci datubāzē, izmantojot unikālu identifikatoru un maina nepieciešamās vērtības (cena, apraksts, daudzums). Izvaddati – Datu bāze ar atjauninātu informāciju.",
+    "output": "Šeit aprakstītas darbības, kuras piegādātājs veic ar sistēmu, bet ir jānorāda ievaddati, kuri šīs funkcijas izpildei ir vajadzīgi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis - uzglabāt informāciju par produktu, lai nodrošinātu vieglu piekļuvi šiem datiem, to turpmāko izmantošanu un apstrādi informācijas sistēmā. Ievaddati - Produkta nosaukums, Vienības (gab., iepakojumi, grami, litri), Produkta kategorija, Cena par gabalu vai kilogramu, Svars, tilpums vai vienību skaits iepakojumā, Attēls, kas attēlo produktu, Derīguma termiņš (atjaunina katru nedēļu), Detalizēta informācija satura apraksts produktiem, kas izgatavoti no vairākām sastāvdaļām — maksimālais pieejamais daudzums konkrētajā nedēļā. Darbības – Informacijas glabšana. Izvaddati – Struktureta informacija  par produktiem.",
+    "output": "Jānorāda precīzi, kāda informācija tiek izvadīta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis - Dežurantu izvēle gadījumā, ja nav brīvprātīgie. Ievaddati - pēdējā reize, kad lietotājs bija dežurants. Darbība - gadījumā, ja nav pieteicies neviens brīvprātīgais, tad programma nozīmē par dežurantiem 2 lietotājus, kuri visilgāk nav pildījuši šos pienākumus. Izvaddati – Katru nedēļu tiek izvēlēti divi dežuranti .",
+    "output": "Šis ir funkcijas izpildes nosacījuma, bet šīs funkcijas izvaddati visdrīzāk būtu informācija par šiem diviem izvēlētajiem dežurantiem."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis - Nodrošinot iespēju atstāt atsauksmes par sistēmas darbību un citiem dalībniekiem. Ievaddati - Pēc pasūtījuma veikšanas lietotājs aizpilda īsu anketu, novērtējot sistēmas efektivitāti . Darbības - sistēma liek lietotājam novērtēt darba procesu, saglabā saņemtos vērtējumus datu bāzē un aprēķina vidējo vērtējumu attēlošanai. Izvaddati - sistēma saglabā saņemtās atsauksmes un parāda tās gan citiem lietotājiem, gan personām, kuras vēl nav reģistrējušās sistēmā.",
+    "output": "Jāprecizē- kādu informāciju ir nepieciešams norādīt anketā."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: sniegt informāciju un atbildes uz bieži uzdotiem jautājumiem.\nIevaddati: lietotāja vaicājumi.\nDarbības: iegūt attiecīgo informāciju no bieži uzdotiem jautājumiem.\nIzvaddati: Bieži uzdoto jautājumu atbildes.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: atpazīt un apbalvot lojālus klientus ar zelta klienta statusu.\nIevaddati: Klientu pasūtījumu vēsture.\nDarbības: izsekot klienta veikto pasūtījumu skaitu.\nIzvaddati: piešķirt zelta klienta statusu un piemērot 10% atlaidi.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Ļaut klientiem attālināti pasūtīt ziedus, izmantojot mobilo aplikāciju.\nIevaddati: Ziedu parametri , klienta informācija.\nDarbības: Klienti izvēlas ziedus un ievada pasūtījuma datus mobilajā aplikācijā, nosūta pasūtījumu uz veikalu.\nIzvaddati: Reģistrēts pasūtījums, kas tiek pievienots datu bāzei un piešķirts statuss.",
+    "output": "Jānorāda precīzi, kādi tieši dati ir nepieciešami pasūtījuma veikšanai. Jāprecizē, kāds statuss tiek piešķirts pasūtījumam."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Palīdzēt klientam ātrāk un ērtāk izvēlēties ziedus jau zinot nepieciešamo krāsu.\nIevaddati: Krāsas nosaukums vienā no 3 valodām. Darbība: Funkcija palīdz atlasīt ziedu variantus pēc dotām krāsām.\nIzvaddati: Funkcija izvada klientam ziedu variantus no krāsām, kas tika ievadītas.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis- datu apkopošana un nodošana salona vadītājam, atskaišu izveidei. Ievaddati- laika periods, floristu izpildīto pasūtījumu skaits, klientu veikto pasūtījumu skaits. Darbības- sistēma apkopo informāciju par floristu izpildītajiem pasūtījumiem, kā arī klientu veiktajiem pasūtījumiem noteiktajā laika periodā un nodod to salona vadītājam, atskaites izveidei. Izvaddati- atskaite faila formā, kura satur darbinieku vārdu un uzvārdu, to izpildīto pasūtījumu skaitu, kā arī klienta ID un tā veikto pasūtījumu skaitu.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis- Citu ziedu veidu piedāvāšana, gadījumos, kad pieprasītie ziedi nav pieejami. Ievaddati- Informācija par pieejamajiem ziediem; rekomendācijas, kas ir saistītas ar klientiem vēlamajiem ziediem. Darbības- gadījumos, kad klients vēlas iegādāties ziedus, kas nav pieejami, sistēma izmet paziņojumu, ka to nav noliktavā un piedāvā citus līdzīgus ziedu veidus. Izvaddati- paziņojums par preces neesamību noliktavā, rekomendācijas ar citiem ziediem.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Pievilcīga un informatīva mājaslapa, lai piesaistītu klientus un sniegtu ieskatu par piedāvājumu.\nIevaddati: pasūtījumu skaits, laika periods pasūtījumam, ziedu un floristu izvēlēšana.\nDarbības: iegūt visu ievadītu klienta informaciju un apstrādāt to.\nIzvaddati: izvadīt pdf dokumenta formāta visu informāciju par pasūtījumu.",
+    "output": "Prasības mēŗķis nesaskan ar pārējo prasības aprakstu"
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Lietotājam jābūt iespējai izveidot savu profilu. Ievades dati: E-pasts; Vārds; Uzvārds; Telefona numurs; Adrese; Parole.\nDarbības: Izmantojot lietotāja ievadītos ievades datus izveidot jaunu ierakstu datubāzes profila saistītās tabulās. Izvades dati: Tiek izveidots lietotāja profils, kas tiek izmantots priekš citām lietotāja funkcionalitātēm.",
+    "output": "Aprakstā ir teikts, ka klientam, lai reģistrētos, ir jānorāda arī savs personas kods. Šī ir darbība, bet Jums ir jānorāda, kāda būs izvade, piemēram, paziņojums par veiskmīgu reģistrāciju vai tamlīdzīgi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Izvadīt paziņojumu un neļaut lietotājam turpināt izveidot profilu, ja parole neatbilst nosacītajiem kritērijiem. Ievades dati: Parole.\nDarbības: Ievadītā parole tiek iekšēji validēta, lai atbilstu šiem kritērijiem: Simbolu virkne sastāv no vismaz 1 cipara; Simbolu virkne ir vismaz 8 rakstzīmju gara. Izvades dati: Ja ievadītā parole neatbilst iekšējās validācijas noteiktajiem kritērijiem, tad lietotājam tiek izvadīts paziņojums zem paroles ievades lauka un netiek ļauts izveidot profilu.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Priekšmetu atrašana un ieteikums lietotājam.\nIevaddati: Nosaukums, ražotājs, cena, kategorija, pielietojums.\nDarbības: Sistēma atrod objektus no datubāzē eksistējošiem ierakstiem un pasniedz lietotājam, filtrētus atbilstoši ievadītajiem parametriem. Izvades dati: Saraksts ar visatbilstošākajiem priekšmetiem, to nosaukumiem, cenai, pieejamībai, vispārējai informācijai par objektu.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Lietu aizņemšanās / atgriešanas informācijas ievākšana. Ievades dati: Aizņemtie/atgrieztie priekšmeti, piegādes veida izvēle, datums.\nDarbības: Klients izvēlas priekšmetus un ievada laika posmu, uz kuru aizņemas izvēlētos priekšmetus un piegādes viedu, anketas informācija tiek saglabāta datubāzē, tiek aprēķināts aptuvenais piegādes laiks. Izvades dati: Aptuvenais piegādes datums, laiks.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mēŗkis: Viegla un efektīva lietu pārlūkošana izmantojot kategorijas. Ievades dati: Lietotāja izvēlētā kategorija no atspējoto kategoriju saraksta.\nDarbības: Lietotājam, lietotāja saskarnē, tiek atspējotas vairākas galvenās kategorijas, lietotājs uzspiežot uz vienām no šīm kategorijām tiek novirzīts uz lapu kur ir redzamas lietas, kuras pieder lietotāja izvēlētai kategorijai. Izvades dati: Lietas dati no datubāzes.",
+    "output": "Jānorāda prezīzi, kāda informācija (nosaukums/attēls/apraksts utt.) par katru lietu tiks atspoguļota."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Informācija par klienta pasūtītajām lietām nonāk piegādes nodrošinātajiem.\nIevaddati: Piegādes veids, adrese, lietotāja vārds un uzvārds, datums, preces id.\nDarbības: Tiek ievākti dati no datubāzes par lietotāja pieprasītājām preču piegādēm, tiek apstrādāti/noformēti un pārsūtīti piegādes nodrošinātājiem, lai uzsāktu piegādi. Izvades dati: Paziņojums lietotājam par piegādes uzsākšanu.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis ir informēt klientu par noteiktā apkalpojuma apmaksu. Rēķinu iegūst saņemot to uz savu norādīto bankas kontu, ziņa par to atnāk programmā, kas noved tālāk uz internetbanku, kur to ir iespējams apmaksāt",
+    "output": "Funkcionālās prasības nav definētas prasītajā formātā- norādot mērķi, ievaddatus, darbības un izvaddatus. Ir brīvā tekstā aprakstīts katras funkcijas mērķis un daļēji paskaidrotas veicamās darbības."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis ir nodrošināt klientam ērtu programmas pārskatīšanu. Valodu ir iespējams nomainīt programmas iestatījumos pēc klienta prasībām un tās izvēle arī tiek piedāvāta pēc programmas instalēšanas.",
+    "output": "Funkcionālās prasības nav definētas prasītajā formātā- norādot mērķi, ievaddatus, darbības un izvaddatus. Ir brīvā tekstā aprakstīts katras funkcijas mērķis un daļēji paskaidrotas veicamās darbības."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis ir piedāvāt lietotājam ērtu interfeisu kur ir iespējams kalendāra veidā atrast pieejamos datumus, kur veikt pierakstus, kā arī apskatīties konkrētās dienas piedāvātos laikus un izvēlēties sev ērtāko.",
+    "output": "Šai funkcionālajai prasībai trūkst granularitātes- šeit vienā prasībā aprakstītas veirākas funkcijas. Funkcionālās prasības nav definētas prasītajā formātā- norādot mērķi, ievaddatus, darbības un izvaddatus. Ir brīvā tekstā aprakstīts katras funkcijas mērķis un daļēji paskaidrotas veicamās darbības."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: elektronisku maksājumu veikšana DBC biedriem.\nIevaddati: konta numurs, maksājuma summa, maksājuma veids, maksājuma datums.\nDarbības: tiek autentificēta biedra identitāte, pārbaudīts maksājuma veids, veikts elektronisks maksājums ar izvēlēto maksājuma veidu, saņemti un apstrādāti maksājuma dati, izvadīts rēķins.\nIzvaddati: Maksājuma rēķins (maksājuma datums, summa, maksājuma veids, apstiprinājuma ziņojums), unikālais maksājuma ID.",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: sistēmai jāspēj nosūtīt rēķinus pasūtītājiem uz norādītajiem epastiem.\nIevaddati: pasūtītāja epasts.\nDarbības: izstrādāt konkrētās personas rēķinu, ievadīt visus vajadzīgos datus.\nIzvaddati: nosūtīts epasts.",
+    "output": "Jānorāda konkrēti, kādi dati ir nepieciešami un kā tie tiek iegūti- vai tos ievada lietotājs vai tie tiek nolasīti no datu bāzes utml."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis : Sistēma jāspēj veikt pasūtījumu noformēšanu, balstoties uz pulciņa dalībnieku pasūtījumiem, un jāspēj aprēķināt pasūtījuma summu.\nIevaddati: Pasūtījuma informācija - produkti, daudzums, cenas.\nDarbības: Sistēma veic pasūtījuma komplektēšanu, salīdzinot pasūtītos produktus ar pieejamajiem produktiem un aprēķinot pasūtījuma summu, balstoties uz produktu daudzumu un cenu.\nIzvaddati: Pulciņa dalībnieki saņem pasūtījuma sarakstus un summas, sistēma izveido un uzglabā pasūtījuma sarakstu",
+    "output": "Saskaņā ar aprakstu, pasūtījuma komplektēšana ir manuāls process, ko veic dežuranti, nevis process, kas notiek datorsistēmā. Jāprecizē, kādu informāciju satur šie saraksti."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: sistēmai jāspēj noteikt un izziņot pulciņa dalībniekiem par piegādāto produktu kvalitātes trūkumiem vai problēmām, lai veiktu atbilstošas korekcijas/risinājumus.\nIevaddati: produkta nosaukums.\nDarbības: ja sistēma konstatē problēmu/trūkumus, tad tā nosūta paziņojumu attiecīgajiem pulciņa dalībniekiem.\nIzvaddati: Pulciņa dalībnieki saņem paziņojumu par trūkumiem vai problēmām, ieskaitot nepiciešamās korekcijas vai risinājumu norādījumus.",
+    "output": "Vai vienīgie nepieciešamie ievaddati šai funkcijai ir produkta nosaukums? Nav skaidrs, kā datorsistēma varētu konstatēt piegādāto produktu kvalitātes trūkumus. No kurienes sistēma iegūst informāciju par nepieciešamajām korekcijām- vai šo lēmumu sistēma pieņem pilnībā pastrāvīgi vai arī tajā ir iesaistīts cilvēks?"
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis - Automātiski pievienot informāciju (ievaddatus) sistēmas datubāzei.\nIevaddati: Piegādātāja nosaukums, Produkta nosaukums, Cena par iepakojumu/kg, Svars, tilpums, produktu vienību skaits, Sastāva apraksts, Derīguma termiņš, Fotoattēls, Skaits. Darbības - Nolasa ievaddatus no (vēlams) standartizēta faila un ievieto tās datubāzē. Izvaddati – Attiecīgie ievaddati tiek ievietoti datubāzē",
+    "output": "Prasība ir saprotama un korekti noformulēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Lietotāju aplikācijas saskarnē redzami pakalpojumi un to pašlaicīgā pieejamība (ekipējuma vienību skaits noliktavā)",
+    "output": "Funkcionālās prasības nav noformētas atbilstoši- ir dots tikai funkciju mērķis, bet trūkst precīza ievaddatu, darbību un izvaddatu apraksta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Klientam tiek prezentēta nomas veidlapa, kurā jāievada nepieciešamās vajadzības (Pakalpojuma laika intervāls, nepieciešamais ekipējums, personas dati un kontaktinformācija)",
+    "output": "Funkcionālās prasības nav noformētas atbilstoši- ir dots tikai funkciju mērķis, bet trūkst precīza ievaddatu, darbību un izvaddatu apraksta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Sistēmas žurnālā tiek saglabāta informācija par lietotāju, ja ir veicis kādas izmaiņas, saglabājas to laiks, datums",
+    "output": "Funkcionālās prasības nav noformētas atbilstoši- ir dots tikai funkciju mērķis, bet trūkst precīza ievaddatu, darbību un izvaddatu apraksta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Vadītājam ievadot laika periodu un darbinieka vai klienta ID, sistēma atgriež informāciju par konkrēta darbinieka vai klienta darījumiem(izsniegtiem un atpakaļ saņemtiem velosipēdiem(identificējošs numurs, velosipēda modelis), izsniegto un atpakaļ saņemto aprīkojumu skaitu(aprīkojuma veids, modelis, izmērs, identificējošs numurs))",
+    "output": "Funkcionālās prasības nav noformētas atbilstoši- ir dots tikai funkciju mērķis, bet trūkst precīza ievaddatu, darbību un izvaddatu apraksta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Ievadot noteikto laika periodu ir iespējams saņemt informāciju par uzņēmuma darbību. Vadītājs ievada laika periodu, nepieciešama informācija tiek meklēta datu bāze un izvadīta uz ekrāna(iznomāto velosipēdu un papildaprīkojuma skaits(ir iespējams šķīrot pēc modeļa un izmēra)",
+    "output": "Funkcionālās prasības nav noformētas atbilstoši- ir dots tikai funkciju mērķis, bet trūkst precīza ievaddatu, darbību un izvaddatu apraksta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Lietotājam tiek prasīts ievadīt pamatdatus par sevi, lai atrastu tam piemērotāko velosipēdu, balstoties uz to specifikāciju.",
+    "output": "Funkcionālās prasības nav noformētas atbilstoši- ir dots tikai funkciju mērķis, bet trūkst precīza ievaddatu, darbību un izvaddatu apraksta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Balstoties uz iepriekšējām lietotāja tendencēm, tam tiek piedāvāti personalizēti piedāvājumi par jaunām velosipēda nomas iespējām.",
+    "output": "Funkcionālās prasības nav noformētas atbilstoši- ir dots tikai funkciju mērķis, bet trūkst precīza ievaddatu, darbību un izvaddatu apraksta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Lietotājs pievieno preci. Darbības: Pievienošanas funkcija. Izvaddati: Apstiprinājums.",
+    "output": "Nav norādīti ievaddati, kas nepieciešami šīs funkcijas izpildei."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Meklēt preci. Ievaddati: Meklēšanas frāze. Darbības: Meklēšanas funkcija.",
+    "output": "Nav aprakstīts, kādi izvaddati tiek sniegti lietotājam pēc meklēšanas."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: . Ievaddati: . Darbības: . Izvaddati: .",
+    "output": "Nav sniegta prasības būtība — visi lauki ir tukši vai nenozīmīgi."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Lietotājs var atvērt aplikāciju.",
+    "output": "Nav norādīti ievaddati, darbības un izvaddati — prasība nav pilnīga."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Ievaddati: Preces ID. Darbības: Lietotājs var apskatīt preci. Izvaddati: Preces detaļas.",
+    "output": "Nav definēts mērķis – jāpaskaidro, kāds ir funkcijas nolūks."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Lietotājs reģistrējas sistēmā. Darbības: Ievada informāciju. Izvaddati: Apstiprinājuma ziņojums.",
+    "output": "Nav norādīti ievaddati – nav skaidrs, kāda informācija tiek ievadīta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: . Ievaddati: Lietotāja ID. Darbības: Lietotājs piesakās sistēmā. Izvaddati: Lietotāja profils.",
+    "output": "Mērķis nav aprakstīts – prasība jāformulē pilnīgāk."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Meklēt dokumentu. Ievaddati: . Darbības: Meklēt pēc atslēgvārdiem. Izvaddati: Atrasto dokumentu saraksts.",
+    "output": "Trūkst ievaddatu – nav skaidrs, kā tiek ievadīti meklēšanas kritēriji."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Lietotājs piesakās pasākumam. Ievaddati: Vārds, uzvārds. Darbības: Saglabā informāciju.",
+    "output": "Nav norādīts izvaddats – jāprecizē, kāds rezultāts tiek radīts pēc saglabāšanas."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Darbības: Lietotājs var pārlūkot preces. Izvaddati: Preču saraksts.",
+    "output": "Nav definēts mērķis un ievaddati – prasība nav pilnīga."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Lietotājs sūta ziņu. Ievaddati: Ziņas saturs. Darbības: Nosūtīt ziņu. Izvaddati: .",
+    "output": "Izvaddati nav norādīti – jāapraksta, kas notiek pēc ziņas nosūtīšanas."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Apskatīt jaunumus. Ievaddati: . Darbības: . Izvaddati: .",
+    "output": "Nav sniegti nepieciešamie ievaddati un darbības – prasība jāpapildina."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Lietotājs dzēš savu profilu. Ievaddati: Lietotāja ID. Darbības: Profila dzēšana. Izvaddati: .",
+    "output": "Nav aprakstīts, kāds rezultāts rodas pēc profila dzēšanas – jānorāda izvaddati."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Saglabāt izvēlētos iestatījumus. Ievaddati: . Darbības: Saglabā iestatījumus. Izvaddati: Apstiprinājums.",
+    "output": "Ievaddati trūkst – jānorāda, kādi iestatījumi tiek saglabāti."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Pieteikšanās. Ievaddati: Lietotājvārds, parole. Darbības: . Izvaddati: .",
+    "output": "Darbības un izvaddati nav aprakstīti – prasība jāpapildina."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Reģistrēt jaunu pasūtījumu. Ievaddati: . Darbības: . Izvaddati: .",
+    "output": "Trūkst ievaddatu, darbību un izvaddatu – prasība nav detalizēta."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Mērķis: Meklēt klientus. Darbības: . Izvaddati: .",
+    "output": "Ievaddati un darbības nav definētas – nav skaidrs, kā funkcija darbojas."
+  },
+  {
+    "instruction": "Novērtē studenta funkcionālo prasību un sniedz komentāru.",
+    "input": "Ievaddati: Klienta numurs. Darbības: . Izvaddati: .",
+    "output": "Nav definēts mērķis un darbības – prasība ir pārāk nepilnīga."
+  }
+]
